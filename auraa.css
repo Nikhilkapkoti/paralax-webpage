@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins","snas-serif";
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: (255,255,255,0.25);
+    backdrop-filter: blur(0px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: .4s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.paralax{
+    position: absolute;
+    height: 100%;
+}
+.paralax-item{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.p-item1{
+    
+    background: url(moonn.jpg) center/cover no-repeat;
+} 
+.p-item3{
+    background: url(carr.png) bottom/100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+.p-item4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10000%;
+    height: 100%;
+    content: "";
+    background: url() repeat-x;
+    background-size: contain;
+    animation: marque 20s linear infinite;
+}
+.p-item4::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 100%;
+    content: "";
+    background: url("") repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 20s linear infinite;
+    z-index: 1;
+}
+@keyframes marque{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-200vh,0,0);
+    }
+}
+.container{
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 100vh;
+}
+.content-header{
+    font-family: sans-serif;
+    color: white;
+    text-align: center !important;
+    text-transform: uppercase;
+  
+    margin-right: -20px;
+}
+.content-header .h1{
+    font-size: 120px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: -40px;
+
+}
+.content-header .h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.content{
+    width: 200px;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0px;
+}
